@@ -1,5 +1,5 @@
 {
-  "homepage": "https://portfolio.onrender.com/",
+  "homepage": "https://portfolio-5oc0.onrender.com/",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -18,12 +18,14 @@
     "react-scripts": "^5.0.1",
     "react-test-renderer": "^16.10.2",
     "react-twitter-embed": "3.0.3",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "sharp": "0.28.1"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "predeploy": "npm run build",
-    "start": "node fetch.js && react-scripts start",
-    "build": "node fetch.js && react-scripts build",
+    "start": "node fetch.js && cross-env DISABLE_ESLINT_PLUGIN=true react-scripts start",
+    "build": "node fetch.js && cross-env DISABLE_ESLINT_PLUGIN=true react-scripts build",
     "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -52,7 +54,12 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
+    "npm-force-resolutions": "0.0.10",
     "prettier": "^2.3.1"
+  },
+  "resolutions": {
+    "sharp": "0.28.1"
   }
 }
