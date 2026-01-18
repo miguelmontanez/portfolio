@@ -23,7 +23,7 @@ const greeting = {
   username: "Miguel Montanez",
   title: "Hi all, I'm Miguel",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Full-stack AI Developer 🚀 with expertise in building intelligent applications using RAG pipelines, large language models, Python (FastAPI), and React. Experienced in delivering production-ready AI systems with modern front-end interfaces and scalable back-end architectures."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1S_ZVrCH5MKZ0b9VoSC8TeZrl-b9gHciW/edit?usp=sharing&ouid=107079789495160640034&rtpof=true&sd=true", // Set to empty to hide the button
@@ -49,14 +49,19 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "AI DEVELOPER BUILDING INTELLIGENT, PRODUCTION-READY SYSTEMS",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Design and deploy end-to-end RAG pipelines with custom vector search and semantic retrieval"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Develop AI-powered applications integrating OpenAI, LangChain, and custom LLM workflows"
+    ),
+    emoji(
+      "⚡ Build scalable APIs with Python (FastAPI) and modern React interfaces for seamless AI/UX integration"
+    ),
+    emoji(
+      "⚡ Architect document-aware chat interfaces, knowledge assistants, and automated data pipelines"
     )
   ],
 
@@ -65,56 +70,60 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
+      skillName: "TypeScript",
+      fontAwesomeClassname: "fab fa-js-square"
+    },
+    {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "FastAPI",
+      fontAwesomeClassname: "fas fa-bolt"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "LangChain",
+      fontAwesomeClassname: "fas fa-link"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "OpenAI",
+      fontAwesomeClassname: "fas fa-brain"
+    },
+    {
+      skillName: "Vector Database",
+      fontAwesomeClassname: "fas fa-database"
     },
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
     },
     {
+      skillName: "docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "nodejs",
+      fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "html-5",
+      fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "css3",
+      fontAwesomeClassname: "fab fa-css3-alt"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,23 +135,15 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "University of California, Los Angeles",
+      logo: require("./assets/images/uclaLogo.png"),
+      subHeader: "Bachelor of Science (BS)",
+      duration: "2004 - 2008",
+      desc: "Completed comprehensive computer science curriculum with focus on software engineering and algorithms.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Strong foundation in computer science fundamentals",
+        "Coursework in software engineering, data structures, and algorithms"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -153,16 +154,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "RAG & LLM Integration", //Insert stack or technology you have experience in
+      progressPercentage: "95%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Python (FastAPI) Backend",
+      progressPercentage: "90%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "React Frontend",
+      progressPercentage: "85%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,29 +175,41 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Senior Full Stack AI Engineer",
+      company: "Intuz",
+      companylogo: require("./assets/images/intuzLogo.jpg"),
+      date: "January 2022 – August 2025",
+      desc: "Designed and deployed production-ready AI systems integrating RAG pipelines, LLM workflows, and modern full-stack architecture.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Architected end-to-end RAG pipelines with custom vector search and semantic retrieval systems",
+        "Developed AI-powered applications using OpenAI, LangChain, and FastAPI for scalable backend services",
+        "Built React-based interfaces integrated with AI services, ensuring seamless user experiences",
+        "Optimized performance and latency for low-latency AI applications"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Full-stack Software Engineer",
+      company: "Segment",
+      companylogo: require("./assets/images/segmentLogo.png"),
+      date: "March 2019 – December 2021",
+      desc: "Developed and maintained full-stack applications with focus on scalability, reliability, and user-centric design.",
+      descBullets: [
+        "Built robust backend services and modern frontend interfaces",
+        "Contributed to product features serving millions of users",
+        "Collaborated with cross-functional teams on complex system architecture"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "DevOps Engineer",
+      company: "OpsRamp",
+      companylogo: require("./assets/images/opsrampLogo.png"),
+      date: "June 2016 – February 2019",
+      desc: "Managed infrastructure, deployment pipelines, and cloud operations for enterprise-scale systems.",
+      descBullets: [
+        "Designed and implemented CI/CD pipelines for automated testing and deployment",
+        "Managed cloud infrastructure and containerized applications",
+        "Improved system reliability and reduced operational overhead"
+      ]
     }
   ]
 };
@@ -366,15 +379,15 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+1 (415) 432-5555",
+  number: "+1 (916) 495-0464",
   email_address: "miguelmontanez.business@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "", //Replace "twitter" with your twitter username without @
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
