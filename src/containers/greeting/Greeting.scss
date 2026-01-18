@@ -38,7 +38,10 @@
   display: flex;
   margin-top: 40px;
 }
-.download-link-button {
+.download-link-button,
+.download-link-button:hover,
+.download-link-button:focus,
+.download-link-button:visited {
   text-decoration: none;
 }
 
