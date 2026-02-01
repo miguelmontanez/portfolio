@@ -308,10 +308,16 @@ const blogSection = {
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://medium.com/@miguelmontanez.busines/django-app-works-locally-but-not-on-aws-ec2-fed46c03e8e5",
+      title: "Django App Works Locally but Not on AWS EC2",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Troubleshooting guide for common Django deployment issues on AWS EC2 instances and how to resolve them."
+    },
+    {
+      url: "https://medium.com/@miguelmontanez.busines/building-a-legal-compliance-aware-rag-system-daeb0c9efa83",
+      title: "Building a Legal & Compliance-Aware RAG System",
+      description:
+        "Deep dive into constructing Retrieval-Augmented Generation systems that understand and enforce legal and compliance requirements."
     }
   ],
   display: true // Set false to hide this section, defaults to true
