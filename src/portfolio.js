@@ -229,25 +229,38 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/v7labsLogo.jpg"),
+      projectName: "V7 Labs - AI Agents",
+      projectDesc:
+        "Pre-built, no-code AI agents and document intelligence (V7 Go) that automate legal, finance, insurance and real-estate workflows.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://www.v7labs.com/agents"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/bigideasDBLogo.png"),
+      projectName: "BigIdeasDB",
+      projectDesc:
+        "AI-powered market intelligence that analyzes app reviews, Reddit, G2 and Upwork to surface validated startup opportunities and product ideas.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://bigideasdb.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/dealNavigoatorLogo.png"),
+      projectName: "DealNavigator.ai",
+      projectDesc:
+        "Algorithmic M&A intelligence for private equity and investors - fast, expert-validated due diligence, precision targeting and deal sourcing.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://dealnavigator.ai/"
         }
       ]
     }
