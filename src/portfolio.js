@@ -229,25 +229,38 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/v7labsLogo.jpg"),
+      projectName: "V7 Labs - AI Agents",
+      projectDesc:
+        "Pre-built, no-code AI agents and document intelligence (V7 Go) that automate legal, finance, insurance and real-estate workflows.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://www.v7labs.com/agents"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/bigideasDBLogo.png"),
+      projectName: "BigIdeasDB",
+      projectDesc:
+        "AI-powered market intelligence that analyzes app reviews, Reddit, G2 and Upwork to surface validated startup opportunities and product ideas.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://bigideasdb.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/dealNavigoatorLogo.png"),
+      projectName: "DealNavigator.ai",
+      projectDesc:
+        "Algorithmic M&A intelligence for private equity and investors - fast, expert-validated due diligence, precision targeting and deal sourcing.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://dealnavigator.ai/"
         }
       ]
     }
@@ -265,51 +278,21 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title: "AI Systems Certification",
+      subtitle: "Completed advanced AI systems coursework and hands-on projects focused on LLMs and RAG pipelines.",
+      image: require("./assets/images/aiLogo.jpg"),
+      imageAlt: "AI Certification",
       footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
+        { name: "Certificate", url: "" }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "RAG & Retrieval Engineering",
+      subtitle: "Certification in Retrieval-Augmented Generation techniques, vector search, and semantic retrieval architectures.",
+      image: require("./assets/images/ragLogo.png"),
+      imageAlt: "RAG Certification",
       footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        { name: "Certificate", url: "" }
       ]
     }
   ],
@@ -325,10 +308,16 @@ const blogSection = {
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://medium.com/@miguelmontanez.busines/django-app-works-locally-but-not-on-aws-ec2-fed46c03e8e5",
+      title: "Django App Works Locally but Not on AWS EC2",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Troubleshooting guide for common Django deployment issues on AWS EC2 instances and how to resolve them."
+    },
+    {
+      url: "https://medium.com/@miguelmontanez.busines/building-a-legal-compliance-aware-rag-system-daeb0c9efa83",
+      title: "Building a Legal & Compliance-Aware RAG System",
+      description:
+        "Deep dive into constructing Retrieval-Augmented Generation systems that understand and enforce legal and compliance requirements."
     }
   ],
   display: true // Set false to hide this section, defaults to true
